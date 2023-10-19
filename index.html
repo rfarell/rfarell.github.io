@@ -1,88 +1,61 @@
 <!DOCTYPE html>
-
-<html lang="en-US">
+<html lang="en">
 
 <head>
-
-  <title>Ryan Farell</title>
-
-  <meta charset="utf-8">
-  <meta name="description" content="Ryan Farell" />
-  <meta name="robots" content="index">
-  <meta name="keywords" content="Ryan Farell's Webpage">
-
-  <link rel="stylesheet" href="farell.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Raleway" rel="stylesheet">
-
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-  <script>$(function () {
-      $("#header").load("header.html");
-    });
-  </script>
-
-  <script>$(function () {
-      $("#footer").load("footer.html");
-    });
-  </script>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Farell's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
+    <!-- Header Section -->
+    <header>
+        <div class="centered-profile">
+            <img src="RyanFarellHiking.jpg" alt="A portrait of Ryan Farell" class="profile-image">
+            <h1>Ryan Farell</h1>
+            <p>Unlocking the potential of deep neural nets in scientific discovery</p>
+            <nav aria-label="Social media links">
+                <div class="social-icons">
+                    <a href="https://twitter.com/rmfarell" class="social-icon" aria-label="Ryan Farell on Twitter">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                    <a href="https://www.linkedin.com/in/ryan-f-94b52267/" class="social-icon" aria-label="Ryan Farell on LinkedIn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/rfarell" class="social-icon" aria-label="Ryan Farell on GitHub">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-  <!--Load the navbar and header.-->
-  <div class="container">
-    <div id="header"></div>
-
-    <div class="row">
-      <div class="col-sm-12"></div>
-      <header id="indexVideo">
-
-        <div class="row">
-
-          <div class="col-md-8" id="headerTextBox">
-            <p class="text-justify" id="aboutMe">
-              Hi, I'm <strong>Ryan Farell</strong>. I'm a PhD student with a research focus in deep reinforcement
-              learning.
-              I'm on an Equinor Research Fellowship, where I work closely with the North America Data Science (DCoE DS)
-              group and conduct research on machine learning applications to reservoir engineering.
-              This work is being used in production, replacing a lot of labor previously carrier out by reservoir
-              engineers. <a href="https://www.orie.utexas.edu/about/director">Prof. Bickel</a> is both my PhD advisor
-              and PI on this project.
-              I also work closely with the <a href="https://cvcweb.oden.utexas.edu/cvcwp/">CVC Lab</a> under <a
-                href="https://www.oden.utexas.edu/people/11/">Prof. Bajaj</a>. Here, I work on a large scale project
-              called <a href="https://cvcweb.oden.utexas.edu/cvcwp/projects/dedrecon/">DEDRECON</a>,
-              which is an army project that develops advanced machine learning algorithms for real-life image visual
-              perception
-              under multople modalities. I'm also working on object cloaking via shape optimization of metamaterials
-              with deep reinforcement
-              learning.
-
-
-            </p>
-            <p class="text-justify" id="interests">Research interests: reinforcement learning, probability theory,
-              decision theory</p>
-          </div>
-          <div class="col-xs-4" id="photo">
-            <img src="RyanFarellHiking.JPG" alt="Photo of Ryan">
-          </div>
-
+    <!-- Projects Section -->
+    <section id="projects">
+        <!-- Project 1: Reservoir Simulation Tutorial -->
+        <div class="project">
+            <h3>Subsurface Modeling Tutorials</h3>
+            <p>A comprehensive set of Jupyter notebooks covering subsurface modeling techniques, from single-phase to multi-phase flow, history matching, and usage of the Open Porous Media Flow Simulator. Compatible with Google Colab.</p>
+            <a href="https://github.com/rfarell/Subsurface-Modeling-Tutorials">GitHub Repository</a>
         </div>
 
-      </header>
+        <div class="project">
+            <h3>Reduced Order Modeling Tutorials</h3>
+            <p>A collection of Jupyter notebooks providing tutorials on reduced order modeling techniques like DeepONet, FNO, DL-ROM, and POD-DL-ROM. Easily runnable on Google Colab.</p>
+            <a href="https://github.com/rfarell/Reduced-Order-Modeling-Tutorials">GitHub Repository</a>
+        </div>
 
-      <!--Load the footer.-->
-      <div class="col-sm-12">
-        <div id="footer"></div>
-      </div>
+        <!-- Project 2: AcreTech AI -->
+        <div class="project">
+            <h3>AcreTech AI</h3>
+            <p>AcreTech AI is an exciting company focused on AI-driven solutions. It's a platform that leverages cutting-edge AI technologies to address real-world challenges.</p>
+            <a href="https://www.acretech.ai/">Website</a>
+        </div>
 
-    </div>
-
-  </div>
-
+        <!-- Add more project sections here if needed -->
+    </section>
 </body>
 
 </html>
