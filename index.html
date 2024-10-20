@@ -3,107 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan's Personal Website</title>
-    <style>
-        body {
-            background-color: #e6e6e6; /* Light gray background for a clean look */
-            color: #000;
-            font-family: Arial, sans-serif;
-        }
-        a {
-            color: #1a0dab; /* Professional dark blue link color */
-            text-decoration: underline;
-        }
-        .container {
-            width: 800px;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #000;
-            background-color: #ffffff;
-        }
-        h1, h2 {
-            color: #ff4500; /* Bright red header color for that retro feel */
-        }
-        hr {
-            border: 1px dashed #000; /* A dashed line for a retro divider */
-        }
-    </style>
+    <title>Ryan Farell</title>
+    <meta name="description" content="Research Scientist specializing in Scientific Machine Learning and Dynamic Belief Games.">
+    <meta name="keywords" content="Ryan Farell, Research Scientist, Machine Learning, Dynamic Belief Games, Scientific Computing">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
     <div class="container">
-        <h2>Musings</h2>
-        <ul id="repo-list">
-            <li><a href="musings/value_usefulness.html">Value Usefulness</a></li>
-        </ul>
-        
-        <h2>GitHub Repositories</h2>
-        <div id="filter-container">
-            <button onclick="filterRepos('all')">All</button>
-            <button onclick="filterRepos('Reduced Order Modeling')">Reduced Order Modeling</button>
-            <button onclick="filterRepos('PDEs')">PDEs</button>
-            <button onclick="filterRepos('Datasets')">Datasets</button>
-            <button onclick="filterRepos('Dynamics')">Dynamics</button>
-            <button onclick="filterRepos('Gaussian Process')">Gaussian Process</button>
-            <button onclick="filterRepos('Stability')">Stability</button>
-            <button onclick="filterRepos('Paper Implementations')">Paper Implementations</button>
-        </div>
+        <main>
+            <section id="about" class="about-me">
+                <img src="assets/headshot.jpeg" alt="Photo of Ryan Farell">
+                <div class="about-text">
+                    <h1>Ryan Farell</h1>
+                    <p>
+                        I'm a Research Scientist at UT, currently spearheading the project effort on Dynamic Belief Games.
+                        My interests lie in Scientific Machine Learning, where I explore innovative approaches to
+                        integrating machine learning techniques with scientific research.
+                    </p>
+                </div>
+            </section>
+            
+            <section id="thoughts">
+                <h2>Thoughts</h2>
+                <ul id="thoughts-list">
+                    <li><a href="thoughts/value_usefulness.html">Value Usefulness</a></li>
+                    <li><a href="thoughts/favorite_links.html">Favorite Links from Around the Web</a></li>
+                    <li><a href="thoughts/favorite_papers.html">Favorite Papers</a></li>
+                </ul>
+            </section>
 
-        <ul id="repo-list">
-            <li class="repo-item" data-tags="Reduced Order Modeling, year:2024">
-                <a href="https://github.com/rfarell/Reduced-Order-Modeling-Tutorials">Reduced-Order Modeling Tutorials</a>
-            </li>
-            <li class="repo-item" data-tags="PDEs, year:2024">
-                <a href="https://github.com/rfarell/PDEsNumericalMethods">PDEs Numerical Methods</a>
-            </li>
-            <li class="repo-item" data-tags="Datasets, Dynamics, year:2024">
-                <a href="https://github.com/rfarell/2024_Farell_SimpleSystemsDatasets">2024 Farell Simple Systems Datasets</a>
-            </li>
-            <li class="repo-item" data-tags="Dynamics, Paper Implementations, year:2022">
-                <a href="https://github.com/rfarell/2022_Tanaka_HamiltonianGP_NoisySparseData">2022 Tanaka Hamiltonian GP for Noisy Sparse Data</a>
-            </li>
-            <li class="repo-item" data-tags="Gaussian Process, Paper Implementations, year:2010">
-                <a href="https://github.com/rfarell/2010_LazaroGradilla_SparseSpectrumGP">2010 Lazaro Gradilla Sparse Spectrum GP</a>
-            </li>
-            <li class="repo-item" data-tags="Stability, Paper Implementations, year:2022">
-                <a href="https://github.com/rfarell/2022_Rodriquez_LyaNet">2022 Rodriguez LyaNet</a>
-            </li>
-            <li class="repo-item" data-tags="Dynamics, Paper Implementations, year:2019">
-                <a href="https://github.com/rfarell/2019_Greydanus_HamiltonianNN">2019 Greydanus Hamiltonian Neural Network</a>
-            </li>
-            <li class="repo-item" data-tags="Dynamics, Paper Implementations, year:2019">
-                <a href="https://github.com/rfarell/2019_Yildiz_ODE2VAE">2019 Yildiz ODE2VAE</a>
-            </li>
-            <li class="repo-item" data-tags="Gaussian Process, Paper Implementations, year:2017">
-                <a href="https://github.com/rfarell/2017_Lyu_SphericalStructuredFeatures">2017 Lyu Spherical Structured Features</a>
-            </li>
-            <li class="repo-item" data-tags="Gaussian Process, Paper Implementations, year:2007">
-                <a href="https://github.com/rfarell/2007_RahimiRecht_RandomFeaturesKernel">2007 Rahimi & Recht Random Features Kernel</a>
-            </li>
-            <li class="repo-item" data-tags="Paper Implementations, year:2024">
-                <a href="https://github.com/rfarell/guided-dropout-experiments">Guided Dropout Experiments</a>
-            </li>
-        </ul>
+            <section id="projects">
+                <h2>Projects</h2>
+                
+                <div class="current-projects">
+                    <h3>Current Projects</h3>
+                    <ul>
+                        <li class="project-item">
+                            <a href="https://github.com/rfarell/Reduced-Order-Modeling-Tutorials" target="_blank" rel="noopener noreferrer">Reduced-Order Modeling Tutorials</a>
+                            <p class="project-description">A comprehensive set of tutorials on reduced-order modeling techniques for various applications.</p>
+                        </li>
+                        <li class="project-item">
+                            <a href="https://www.acretech.ai/" target="_blank" rel="noopener noreferrer">Acretech.ai</a>
+                            <p class="project-description">AcreTech AI helps customers build accurate predictions of where and how to drill. Drill smarter with AI.</p>
+                        </li>
+                        <li class="project-item">
+                            <a href="https://github.com/rfarell/PDEsNumericalMethods" target="_blank" rel="noopener noreferrer">PDEs Numerical Methods</a>
+                            <p class="project-description">Implementation of numerical methods for solving partial differential equations efficiently.</p>
+                        </li>
+                    </ul>
+                </div>
 
-        <h2>Other Projects</h2>
-        <ul>
-            <li><a href="https://www.acretech.ai/">Acretech.ai</a></li>
-        </ul>
-
+                <div class="past-projects">
+                    <h3>Past Projects</h3>
+                    <ul>
+                        <li class="project-item">
+                            <a href="https://github.com/rfarell/2024_Farell_SimpleSystemsDatasets" target="_blank" rel="noopener noreferrer">2024 Farell Simple Systems Datasets</a>
+                            <p class="project-description">Curated datasets for studying simple dynamical systems and their behaviors.</p>
+                        </li>
+                        <li class="project-item">
+                            <a href="https://github.com/rfarell/2022_Tanaka_HamiltonianGP_NoisySparseData" target="_blank" rel="noopener noreferrer">2022 Tanaka Hamiltonian GP for Noisy Sparse Data</a>
+                            <p class="project-description">Implementation of Hamiltonian Gaussian Processes tailored for handling noisy and sparse datasets.</p>
+                        </li>
+                        <li class="project-item">
+                            <a href="https://github.com/rfarell/2010_LazaroGradilla_SparseSpectrumGP" target="_blank" rel="noopener noreferrer">2010 Lazaro Gradilla Sparse Spectrum GP</a>
+                            <p class="project-description">Sparse Spectrum Gaussian Process model for scalable and efficient machine learning applications.</p>
+                        </li>
+                        <li class="project-item">
+                            <a href="https://github.com/rfarell/2022_Rodriquez_LyaNet" target="_blank" rel="noopener noreferrer">2022 Rodriguez LyaNet</a>
+                            <p class="project-description">A neural network architecture focused on Lyapunov stability analysis for dynamic systems.</p>
+                        </li>
+                        <li class="project-item">
+                            <a href="https://github.com/rfarell/2019_Greydanus_HamiltonianNN" target="_blank" rel="noopener noreferrer">2019 Greydanus Hamiltonian Neural Network</a>
+                            <p class="project-description">A neural network framework based on Hamiltonian mechanics for modeling physical systems.</p>
+                        </li>
+                        <li class="project-item">
+                            <a href="https://github.com/rfarell/2019_Yildiz_ODE2VAE" target="_blank" rel="noopener noreferrer">2019 Yildiz ODE2VAE</a>
+                            <p class="project-description">An extension of Variational Autoencoders using Ordinary Differential Equations for enhanced data representation.</p>
+                        </li>
+                        <li class="project-item">
+                            <a href="https://github.com/rfarell/2017_Lyu_SphericalStructuredFeatures" target="_blank" rel="noopener noreferrer">2017 Lyu Spherical Structured Features</a>
+                            <p class="project-description">Implementation of spherical structured features for Gaussian Processes to improve spatial data modeling.</p>
+                        </li>
+                        <li class="project-item">
+                            <a href="https://github.com/rfarell/2007_RahimiRecht_RandomFeaturesKernel" target="_blank" rel="noopener noreferrer">2007 Rahimi & Recht Random Features Kernel</a>
+                            <p class="project-description">Random Features Kernel method for scalable kernel approximations in machine learning.</p>
+                        </li>
+                        <li class="project-item">
+                            <a href="https://github.com/rfarell/guided-dropout-experiments" target="_blank" rel="noopener noreferrer">Guided Dropout Experiments</a>
+                            <p class="project-description">Experiments exploring guided dropout techniques to improve neural network generalization.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
     </div>
-<script>
-    function filterRepos(tag) {
-        const items = document.querySelectorAll('.repo-item');
-        
-        items.forEach(item => {
-            const tags = item.getAttribute('data-tags');
-            if (tag === 'all' || tags.includes(tag) || (tag === 'year' && tags.match(/year:\d+/))) {
-                item.style.display = 'list-item';
-            } else {
-                item.style.display = 'none';
-            }
-        });
-    }
-</script>
-
+    <footer>
+        <p>© 2024 Ryan Farell | <a href="mailto:ryan.farell@utexas.edu">Email Me</a> | <a href="https://github.com/rfarell" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    </footer>
+</body>
 </html>
